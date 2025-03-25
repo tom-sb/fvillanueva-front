@@ -9,7 +9,7 @@ import { ROUTES } from '../../utils/constants';
 import { useIntl } from 'react-intl';
 import { useLocation, useNavigate } from 'react-router-dom';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
-import LanguageSwitch from '../molecules/language-switch';
+import LanguageSwitch from '../molecules/header/language-switch';
 
 interface IItemsRoutes {
   text: string;

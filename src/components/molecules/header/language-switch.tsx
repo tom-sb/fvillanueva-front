@@ -5,7 +5,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 export default function ColorToggleButton() {
   const [alignment, setAlignment] = React.useState('web');
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, newAlignment: string) => {
+  const handleChange = (_event: React.MouseEvent<HTMLElement>, newAlignment: string) => {
     setAlignment(newAlignment);
   };
 

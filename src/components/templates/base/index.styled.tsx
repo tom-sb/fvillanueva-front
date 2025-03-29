@@ -12,13 +12,13 @@ export const Base = styled('div')(({ theme }) => ({
 
 export const Main = styled('main')(({ theme }) => ({
   position: 'fixed',
-  width: `calc(100% - width`,
-  height: '100%',
-  top: 0,
-  left: 'width',
+  width: '100%',
+  height: `100%`,
+  top: '10%',
+  left: 0,
   overflow: 'auto',
   backgroundColor: theme.palette.background.paper,
-  padding: theme.spacing(2),
+  padding: theme.spacing(0),
   transition: theme.transitions.create('margin', {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,

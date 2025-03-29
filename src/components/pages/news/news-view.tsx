@@ -14,13 +14,15 @@ import FooterPage from '../../organims/footer-page';
 export default function NewsView() {
   return (
     <Container
-      maxWidth="xl"
+      maxWidth={false}
+      disableGutters
       sx={{
+        bgcolor: "red", 
         flexGrow: 1,
-        py: 4, // Espaciado opcional
-        display: 'flex',
-        flexDirection: 'column',
-        bgcolor: 'red',
+        display: "flex",
+        flexDirection: "column",
+        // El 100vh es opcional, si quieres que ocupe todo el alto
+        minHeight: "100vh",
       }}
     >
       <Box>

@@ -18,6 +18,7 @@ function FooterPage() {
         py: 2,
         textAlign: 'center',
         mt: 'auto',
+        width: '100%',
       }}
     >
       <Stack direction={'column'} gap={2} alignItems="center">

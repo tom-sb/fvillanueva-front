@@ -5,7 +5,7 @@ import { translations } from './utils/translation';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { HelmetProvider } from 'react-helmet-async';
 import { SidebarProvider } from './contexts/sidebar.provider';
-import ResponsiveAppBar from './components/organims/app-bar';
+import ResponsiveAppBar from './components/organims/header-bar/app-bar';
 
 //import '@fontsource/roboto/300.css';
 //import '@fontsource/roboto/400.css';

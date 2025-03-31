@@ -1,15 +1,13 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import AdbIcon from '@mui/icons-material/Adb';
-import { ROUTES } from '../../utils/constants';
+import { ROUTES } from '../../../utils/constants';
 import { useIntl } from 'react-intl';
 import { useLocation, useNavigate } from 'react-router-dom';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
-import LanguageSwitch from '../molecules/header/language-switch';
+import LanguageSwitch from '../../molecules/header/language-switch';
+import Logo from '../../molecules/header/logo';
 
 interface IItemsRoutes {
   text: string;
@@ -76,27 +74,9 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" sx={{ bgcolor: '#1c284c' }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Ontario
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+        <Toolbar sx={{justifyContent: 'space-between'}}>
+          <Logo/>
+          <Box sx={{ bgcolor: 'blue', display: { xs: 'none', md: 'flex' } }}>
             {itemsRoutes.map((page) => (
               <Button
                 key={page.route}
@@ -107,11 +87,8 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <LanguageSwitch />
-          </Box>
+          <LanguageSwitch />
         </Toolbar>
-      </Container>
     </AppBar>
   );
 }

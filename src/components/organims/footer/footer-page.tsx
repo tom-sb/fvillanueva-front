@@ -2,11 +2,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { IconButton, Stack } from '@mui/material';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
-import SocialNetworkIcons from '../molecules/footer/social-network-icons';
-import FindInfo from '../molecules/footer/find-us-info';
-import ProjectInfo from '../molecules/footer/projects-info';
-import AboutUsInfo from '../molecules/footer/about-us-info';
-import ContactInfo from '../molecules/footer/contact-info';
+import SocialNetworkIcons from '../../molecules/footer/social-network-icons';
+import FindInfo from '../../molecules/footer/find-us-info';
+import ProjectInfo from '../../molecules/footer/projects-info';
+import AboutUsInfo from '../../molecules/footer/about-us-info';
+import ContactInfo from '../../molecules/footer/contact-info';
 
 function FooterPage() {
   return (

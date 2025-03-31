@@ -9,7 +9,7 @@ import {
   Container,
   Typography,
 } from '@mui/material';
-import FooterPage from '../../organims/footer-page';
+import FooterPage from '../../organims/footer/footer-page';
 import React from 'react';
 
 export default function NewsView() {

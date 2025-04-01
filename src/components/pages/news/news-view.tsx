@@ -13,16 +13,11 @@ import FooterPage from '../../organims/footer/footer-page';
 import React from 'react';
 
 export default function NewsView() {
-
   const bull = (
-    <Box
-      component="span"
-      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
+    <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }} >
       •
     </Box>
-  );
-  
+  );  
   const card = (
     <React.Fragment>
       <CardContent>
@@ -50,13 +45,13 @@ export default function NewsView() {
       maxWidth={false}
       disableGutters
       sx={{
-        bgcolor: "green", 
+        bgcolor: 'green',
         flexGrow: 1,
-        display: "flex",
-        flexDirection: "column",
+        display: 'flex',
+        flexDirection: 'column',
         // El 100vh es opcional, si quieres que ocupe todo el alto
-        minHeight: "100vh",
-        alignItems:'center'
+        minHeight: '100vh',
+        alignItems: 'center',
       }}
     >
       <Box>

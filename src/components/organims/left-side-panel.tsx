@@ -54,14 +54,6 @@ const LeftSidePanel: React.FC = () => {
       route: ROUTES.SOCIALRESP,
     },
     {
-      text: intl.formatMessage({ id: 'refered' }),
-      icon: <ShoppingCartOutlinedIcon />,
-      onClick: () => {
-        navigate(ROUTES.REFERED);
-      },
-      route: ROUTES.REFERED,
-    },
-    {
       text: intl.formatMessage({ id: 'news' }),
       icon: <ShoppingCartOutlinedIcon />,
       onClick: () => {

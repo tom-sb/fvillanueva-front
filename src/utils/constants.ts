@@ -7,6 +7,5 @@ export const ROUTES = {
   SUBURBS: '/suburbs',
   MULTIFAM: '/multifam',
   SOCIALRESP: '/socialresp',
-  REFERED: '/refered',
   NEWS: '/news',
 };

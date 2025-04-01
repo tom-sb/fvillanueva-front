@@ -4,7 +4,6 @@ export default {
   suburbs: 'Condominios',
   multifam: 'Multi familiar',
   socialresp: 'Responsabilidad Social',
-  refered: 'Referidos',
   news: 'Noticias',
   //footer
   find_us: 'Ubicanos',

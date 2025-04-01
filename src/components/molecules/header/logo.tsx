@@ -1,15 +1,17 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 
-export default function Logo() {
+interface LogoProps {
+  handleClick: () => void;
+}
+export default function Logo({ handleClick }: LogoProps) {
   return (
-    <Box sx={{bgcolor:'red'}}>
+    <Box onClick={handleClick}>
       <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
       <Typography
         variant="h6"
         noWrap
         component="a"
-        href="#app-bar-with-responsive-menu"
         sx={{
           mr: 2,
           display: { xs: 'none', md: 'flex' },

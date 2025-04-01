@@ -4,7 +4,6 @@ export default {
   suburbs: 'Suburbs',
   multi_fam: 'Multi family',
   social_resp: 'Social Resposaility',
-  refered: 'Refered',
   news: 'News',
   //footer
   find_us: 'Find us',

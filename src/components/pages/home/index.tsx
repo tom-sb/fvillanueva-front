@@ -1,11 +1,11 @@
 import { Base, Main } from '../../templates/base';
-import ReferedView from './refered-view';
+import HomeView from './home-view';
 
-export default function Refered() {
+export default function Home() {
   return (
     <Base>
       <Main>
-        <ReferedView />
+        <HomeView />
       </Main>
     </Base>
   );

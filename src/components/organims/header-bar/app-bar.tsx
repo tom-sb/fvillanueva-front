@@ -23,6 +23,13 @@ function ResponsiveAppBar() {
 
   const itemsRoutes: IItemsRoutes[] = [
     {
+      text: intl.formatMessage({ id: 'home' }),
+      onClick: () => {
+        navigate(ROUTES.HOME);
+      },
+      route: ROUTES.HOME,
+    },
+    {
       text: intl.formatMessage({ id: 'aboutus' }),
       onClick: () => {
         navigate(ROUTES.ABOUTUS);
@@ -52,13 +59,6 @@ function ResponsiveAppBar() {
       route: ROUTES.SOCIALRESP,
     },
     {
-      text: intl.formatMessage({ id: 'refered' }),
-      onClick: () => {
-        navigate(ROUTES.REFERED);
-      },
-      route: ROUTES.REFERED,
-    },
-    {
       text: intl.formatMessage({ id: 'news' }),
       onClick: () => {
         navigate(ROUTES.NEWS);
@@ -74,21 +74,21 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" sx={{ bgcolor: '#1c284c' }}>
-        <Toolbar sx={{justifyContent: 'space-between'}}>
-          <Logo/>
-          <Box sx={{ bgcolor: 'blue', display: { xs: 'none', md: 'flex' } }}>
-            {itemsRoutes.map((page) => (
-              <Button
-                key={page.route}
-                onClick={page.onClick}
-                sx={{ my: 2, color: '#cbf000', display: 'block' }}
-              >
-                {page.text}
-              </Button>
-            ))}
-          </Box>
-          <LanguageSwitch />
-        </Toolbar>
+      <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Logo handleClick={() => navigate(ROUTES.HOME)} />
+        <Box sx={{ bgcolor: 'blue', display: { xs: 'none', md: 'flex' } }}>
+          {itemsRoutes.map((page) => (
+            <Button
+              key={page.route}
+              onClick={page.onClick}
+              sx={{ my: 2, color: '#cbf000', display: 'block' }}
+            >
+              {page.text}
+            </Button>
+          ))}
+        </Box>
+        <LanguageSwitch />
+      </Toolbar>
     </AppBar>
   );
 }

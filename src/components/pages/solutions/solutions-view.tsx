@@ -1,9 +1,9 @@
 import { Box, Typography } from '@mui/material';
 
-export default function SubUrbsView() {
+export default function SolutionsView() {
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography>'SubUrbs page'</Typography>
+      <Typography>'Solutions page'</Typography>
     </Box>
   );
 }

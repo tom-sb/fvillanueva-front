@@ -3,9 +3,8 @@ export const ROUTES = {
   NOT_FOUND: '/404',
   FORBIDDEN: '/403',
   SERVER_ERROR: '/500',
-  ABOUTUS: '/aboutus',
-  SUBURBS: '/suburbs',
-  MULTIFAM: '/multifam',
+  SOLUTIONS: '/solutions',
   SOCIALRESP: '/socialresp',
-  NEWS: '/news',
+  ABOUTUS: '/aboutus',
+  CONTACTUS: '/contactus',
 };

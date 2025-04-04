@@ -12,12 +12,12 @@ import {
 import FooterPage from '../../organims/footer/footer-page';
 import React from 'react';
 
-export default function NewsView() {
+export default function ContactUsView() {
   const bull = (
-    <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }} >
+    <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
       •
     </Box>
-  );  
+  );
   const card = (
     <React.Fragment>
       <CardContent>

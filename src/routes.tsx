@@ -4,11 +4,10 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { lazy, Suspense, useRef } from 'react';
 
 const AboutUsView = lazy(() => import('./components/pages/aboutus'));
-const SubUrbs = lazy(() => import('./components/pages/suburbs'));
-const MultiFam = lazy(() => import('./components/pages/multifam'));
+const SubUrbs = lazy(() => import('./components/pages/solutions'));
 const SocialResp = lazy(() => import('./components/pages/socialresp'));
 const Home = lazy(() => import('./components/pages/home'));
-const News = lazy(() => import('./components/pages/news'));
+const News = lazy(() => import('./components/pages/contactus'));
 
 const NotFound = () => {
   return (
@@ -25,10 +24,9 @@ export const RouterProvider = () => {
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUsView />} />
-        <Route path={ROUTES.SUBURBS} element={<SubUrbs />} />
-        <Route path={ROUTES.MULTIFAM} element={<MultiFam />} />
+        <Route path={ROUTES.SOLUTIONS} element={<SubUrbs />} />
         <Route path={ROUTES.SOCIALRESP} element={<SocialResp />} />
-        <Route path={ROUTES.NEWS} element={<News />} />
+        <Route path={ROUTES.CONTACTUS} element={<News />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

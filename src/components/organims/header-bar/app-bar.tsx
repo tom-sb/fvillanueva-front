@@ -8,6 +8,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import LanguageSwitch from '../../molecules/header/language-switch';
 import Logo from '../../molecules/header/logo';
+import { Stack } from '@mui/material';
 
 interface IItemsRoutes {
   text: string;
@@ -30,26 +31,11 @@ function ResponsiveAppBar() {
       route: ROUTES.HOME,
     },
     {
-      text: intl.formatMessage({ id: 'aboutus' }),
-      onClick: () => {
-        navigate(ROUTES.ABOUTUS);
-      },
-      route: ROUTES.ABOUTUS,
-    },
-    {
-      text: intl.formatMessage({ id: 'suburbs' }),
+      text: intl.formatMessage({ id: 'solutions' }),
       icon: <LocalOfferOutlinedIcon />,
       onClick: () => {
-        navigate(ROUTES.SUBURBS);
+        navigate(ROUTES.SOLUTIONS);
       },
-    },
-    {
-      text: intl.formatMessage({ id: 'multifam' }),
-      icon: <LocalOfferOutlinedIcon />,
-      onClick: () => {
-        navigate(ROUTES.MULTIFAM);
-      },
-      route: ROUTES.MULTIFAM,
     },
     {
       text: intl.formatMessage({ id: 'socialresp' }),
@@ -59,11 +45,18 @@ function ResponsiveAppBar() {
       route: ROUTES.SOCIALRESP,
     },
     {
-      text: intl.formatMessage({ id: 'news' }),
+      text: intl.formatMessage({ id: 'aboutus' }),
       onClick: () => {
-        navigate(ROUTES.NEWS);
+        navigate(ROUTES.ABOUTUS);
       },
-      route: ROUTES.NEWS,
+      route: ROUTES.ABOUTUS,
+    },
+    {
+      text: intl.formatMessage({ id: 'contactus' }),
+      onClick: () => {
+        navigate(ROUTES.CONTACTUS);
+      },
+      route: ROUTES.CONTACTUS,
     },
   ];
 
@@ -87,7 +80,17 @@ function ResponsiveAppBar() {
             </Button>
           ))}
         </Box>
-        <LanguageSwitch />
+        <Stack direction={'row'} gap={2}>
+          <Button
+            key={'free_trial'}
+            onClick={() => console.log('prueba gratis')}
+            sx={{ my: 2, bgcolor: '#ffe602', borderRadius: 12 }}
+            variant={'contained'}
+          >
+            {intl.formatMessage({ id: 'free_trial' })}
+          </Button>
+          <LanguageSwitch />
+        </Stack>
       </Toolbar>
     </AppBar>
   );

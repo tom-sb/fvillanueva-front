@@ -1,11 +1,11 @@
+import ContactUsView from './contact-us-view';
 import { Base, Main } from '../../templates/base';
-import SubUrbsView from './suburbs-view';
 
-export default function SubUrbs() {
+export default function News() {
   return (
     <Base>
       <Main>
-        <SubUrbsView />
+        <ContactUsView />
       </Main>
     </Base>
   );

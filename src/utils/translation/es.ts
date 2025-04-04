@@ -1,10 +1,10 @@
 export default {
   home: 'Inicio',
   aboutus: 'Nosotros',
-  suburbs: 'Condominios',
-  multifam: 'Multi familiar',
+  solutions: 'Soluciones',
   socialresp: 'Responsabilidad Social',
   news: 'Noticias',
+  free_trial: 'Prueba gratis',
   //footer
   find_us: 'Ubicanos',
   our_projects: 'Nuestros Proyectos',

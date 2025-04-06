@@ -6,5 +6,5 @@ export const ROUTES = {
   SOLUTIONS: '/solutions',
   SOCIALRESP: '/socialresp',
   ABOUTUS: '/aboutus',
-  CONTACTUS: '/contactus',
+  CONTACT: '/contact',
 };

@@ -7,7 +7,7 @@ const AboutUsView = lazy(() => import('./components/pages/aboutus'));
 const SubUrbs = lazy(() => import('./components/pages/solutions'));
 const SocialResp = lazy(() => import('./components/pages/socialresp'));
 const Home = lazy(() => import('./components/pages/home'));
-const News = lazy(() => import('./components/pages/contactus'));
+const ContactUs = lazy(() => import('./components/pages/contact'));
 
 const NotFound = () => {
   return (
@@ -26,7 +26,7 @@ export const RouterProvider = () => {
         <Route path={ROUTES.ABOUTUS} element={<AboutUsView />} />
         <Route path={ROUTES.SOLUTIONS} element={<SubUrbs />} />
         <Route path={ROUTES.SOCIALRESP} element={<SocialResp />} />
-        <Route path={ROUTES.CONTACTUS} element={<News />} />
+        <Route path={ROUTES.CONTACT} element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

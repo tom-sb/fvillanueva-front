@@ -52,11 +52,11 @@ function ResponsiveAppBar() {
       route: ROUTES.ABOUTUS,
     },
     {
-      text: intl.formatMessage({ id: 'contactus' }),
+      text: intl.formatMessage({ id: 'contact' }),
       onClick: () => {
-        navigate(ROUTES.CONTACTUS);
+        navigate(ROUTES.CONTACT);
       },
-      route: ROUTES.CONTACTUS,
+      route: ROUTES.CONTACT,
     },
   ];
 

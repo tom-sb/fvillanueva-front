@@ -5,6 +5,7 @@ export default {
   social_resp: 'Social Resposaility',
   news: 'News',
   free_trial: 'Free trial',
+  contact: 'Contact us',
   //footer
   find_us: 'Find us',
   our_projects: 'Our projects',

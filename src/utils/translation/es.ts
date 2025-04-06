@@ -5,6 +5,7 @@ export default {
   socialresp: 'Responsabilidad Social',
   news: 'Noticias',
   free_trial: 'Prueba gratis',
+  contact: 'Contactanos',
   //footer
   find_us: 'Ubicanos',
   our_projects: 'Nuestros Proyectos',

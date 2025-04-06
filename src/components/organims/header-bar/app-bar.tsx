@@ -12,7 +12,7 @@ import { Stack } from '@mui/material';
 
 interface IItemsRoutes {
   text: string;
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
   onClick: () => void;
   route?: string;
 }

@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { HelmetProvider } from 'react-helmet-async';
 import { SidebarProvider } from './contexts/sidebar.provider';
 import ResponsiveAppBar from './components/organims/header-bar/app-bar';
+import { LocaleProvider } from './contexts/locale.provider';
 
 //import '@fontsource/roboto/300.css';
 //import '@fontsource/roboto/400.css';
@@ -16,7 +17,7 @@ function App() {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <IntlProvider locale="es" messages={translations.es}>
+      <LocaleProvider>
         <HelmetProvider>
           <SidebarProvider>
             <CssBaseline />
@@ -24,7 +25,7 @@ function App() {
             <AppTransitions />
           </SidebarProvider>
         </HelmetProvider>
-      </IntlProvider>
+      </LocaleProvider>
     </QueryClientProvider>
   );
 }
